@@ -55,6 +55,7 @@ export default class Announcement extends React.Component {
             <div
                 className={classNames('announcement-bar', 'py-2', {
                     'js-announcement': anncmntHasClose,
+                    'is-hidden':true
                     //'is-hidden': anncmntHasClose && isHidden
                 })}
                 {...(anncmntHasClose ? ({ "data-anncmnt-id": anncmntId }) : null)}
