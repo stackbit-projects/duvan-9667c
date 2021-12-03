@@ -28,7 +28,7 @@
                 "style": "link"
             }
         ],
-        "has_secondary_nav": true
+        "has_secondary_nav": false
     },
     "footer": {
         "logo": "images/logo.svg",
