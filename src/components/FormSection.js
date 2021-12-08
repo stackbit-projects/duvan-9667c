@@ -147,7 +147,7 @@ export default class FormSection extends React.Component {
                            //</div>            <button type="submit" className="btn btn--primary">{submitLabel}</button>
                            //</div>        </div>
                            //</div>    </div>
-                           //</div></form>
+                           </div></form>
                         </div>
                     </div>
                 </div>
