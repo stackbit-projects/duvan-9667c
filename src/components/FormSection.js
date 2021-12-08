@@ -97,7 +97,7 @@ export default class FormSection extends React.Component {
                                 'order-first': formPosition === 'top' || formPosition === 'left'
                             })}
                         >
-                            <form</form></div>
+                            <form
                                 name={formId}
                                 id={formId}
                                 {...(formAction ? ({ action: formAction }) : null)}
