@@ -31,7 +31,7 @@ export default class Action extends React.Component {
         }
 
         return (
-            <Link href={withPrefix(url)} {...attrs} className={classes}>
+            <Link  style="display:none" href={withPrefix(url)} {...attrs} className={classes}>
                 {(hasIcon && icon) ? (
                     <React.Fragment>
                         <Icon icon={icon} />
