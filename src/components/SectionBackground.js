@@ -18,7 +18,7 @@ export default class SectionBackground extends React.Component {
                 style={{
                     backgroundImage: `url('${withPrefix(backgroundImage)}')`,
                     display: none,
-                    opacity: backgroundImageOpacity,
+                    opacity: backgroundImageOpacit,
                     backgroundSize: backgroundImageSize,
                     backgroundPosition: backgroundImagePosition,
                     backgroundRepeat: backgroundImageRepeat
