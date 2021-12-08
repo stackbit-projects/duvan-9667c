@@ -90,7 +90,7 @@ export default class FormSection extends React.Component {
                             </div>
                         )}
                         <div
-                            style="display:none"
+                            
                             className={classNames('section__form', 'my-2', 'cell-12', {
                                 'cell-md-5': isHorizontal && formWidth === 'fourty',
                                 'cell-md-6': isHorizontal && formWidth === 'fifty',
