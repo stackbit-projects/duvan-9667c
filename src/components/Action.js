@@ -29,7 +29,7 @@ export default class Action extends React.Component {
         if (newWindow || noFollow) {
             attrs.rel = [(newWindow ? 'noopener' : ''), (noFollow ? 'nofollow' : '')].filter(Boolean).join(' ');
         }
-        return (<Link);
+        return (<Link</Link></Link>);
         return (
             <Link href={withPrefix(url)} {...attrs} className={classes}>
                 {(hasIcon && icon) ? (
