@@ -2,7 +2,7 @@
 title: Home
 sections:
   - type: hero_section
-    subtitle: esta es una prueba de jamstack
+    subtitle: Esta es una prueba de jamstack
     actions:
       - label: Contact Me
         url: /contact
