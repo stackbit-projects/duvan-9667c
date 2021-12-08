@@ -97,7 +97,7 @@ export default class FormSection extends React.Component {
                                 'order-first': formPosition === 'top' || formPosition === 'left'
                             })}
                         >
-                           </div></div>
+                           </div>
                            <form
                            //</div>    name={formId}
                            //</div>    id={formId}
