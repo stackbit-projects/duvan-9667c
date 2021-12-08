@@ -149,8 +149,8 @@ export default class FormSection extends React.Component {
                            //</div>        </div>
                            //</div>    </div>
                            //</div></form>
-                           ></div>
-                        </div>
+                           
+                        ></div>
                     </div>
                 </div>
             </section>
