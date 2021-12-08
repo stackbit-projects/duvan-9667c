@@ -97,58 +97,57 @@ export default class FormSection extends React.Component {
                                 'order-first': formPosition === 'top' || formPosition === 'left'
                             })}
                         >
-                           </div><form>
-                           //</div>    name={formId}
-                           //</div>    id={formId}
-                           //</div>    {...(formAction ? ({ action: formAction }) : null)}
-                           //</div>    method="POST"
-                           //</div>    data-netlify="true"
-                           //</div>    data-netlify-honeypot={formHoneypotName}
-                           //</div>    className={classNames({
-                           //</div>        'form-inline': formLayout === 'inline',
-                           //</div>        'card': isCard,
-                           //</div>        'p-4': isCard,
-                           //</div>        'p-sm-5': isCard
-                           //</div>    })}
-                           //</div>>
-                           //</div>    <div className="sr-only">
-                           //</div>        <label id={formHoneypotLabelId} htmlFor={formHoneypotInputId}>Don't fill this out if you're human:</label>
-                           //</div>        <input aria-labelledby={formHoneypotLabelId} id={formHoneypotInputId} name={formHoneypotName} />
-                           //</div>    </div>
-                           //</div>    <input type="hidden" name="form-name" value={formId} />
-                           //</div>    <div
-                           //</div>        className={classNames('form-content', {
-                           //</div>            'flex': formLayout === 'inline',
-                           //</div>            'flex-column': formLayout === 'inline',
-                           //</div>            'flex-xs-row': formLayout === 'inline'
-                           //</div>        })}
-                           //</div>    >
-                           //</div>        {_.map(formFields, (field, index) => (
-                           //</div>                <div
-                           //</div>                    key={index}
-                           //</div>                    className={classNames('form-group', {
-                           //</div>                        'mb-2': formLayout === 'stacked',
-                           //</div>                        'mb-1': formLayout === 'inline',
-                           //</div>                        'mb-xs-0': formLayout === 'inline',
-                           //</div>                        'flex-auto': formLayout === 'inline'
-                           //</div>                    })}
-                           //</div>                >
-                           //</div>                    <FormField field={field} />
-                           //</div>                </div>
-                           //</div>        ))}
-                           //</div>        <div
-                           //</div>            className={classNames('form-submit', {
-                           //</div>                'mt-3': formLayout === 'stacked',
-                           //</div>                'mx-auto': formLayout === 'inline',
-                           //</div>                'mr-xs-0': formLayout === 'inline',
-                           //</div>                'ml-xs-1': formLayout === 'inline'
-                           //</div>            })}
-                           //</div>        >
-                           //</div>            <button type="submit" className="btn btn--primary">{submitLabel}</button>
-                           //</div>        </div>
-                           //</div>    </div>
-                           //</div>
-                           </form>
+                            <form
+                                name={formId}
+                                id={formId}
+                                {...(formAction ? ({ action: formAction }) : null)}
+                                method="POST"
+                                data-netlify="true"
+                                data-netlify-honeypot={formHoneypotName}
+                                className={classNames({
+                                    'form-inline': formLayout === 'inline',
+                                    'card': isCard,
+                                    'p-4': isCard,
+                                    'p-sm-5': isCard
+                                })}
+                            >
+                                <div className="sr-only">
+                                    <label id={formHoneypotLabelId} htmlFor={formHoneypotInputId}>Don't fill this out if you're human:</label>
+                                    <input aria-labelledby={formHoneypotLabelId} id={formHoneypotInputId} name={formHoneypotName} />
+                                </div>
+                                <input type="hidden" name="form-name" value={formId} />
+                                <div
+                                    className={classNames('form-content', {
+                                        'flex': formLayout === 'inline',
+                                        'flex-column': formLayout === 'inline',
+                                        'flex-xs-row': formLayout === 'inline'
+                                    })}
+                                >
+                                    {_.map(formFields, (field, index) => (
+                                            <div
+                                                key={index}
+                                                className={classNames('form-group', {
+                                                    'mb-2': formLayout === 'stacked',
+                                                    'mb-1': formLayout === 'inline',
+                                                    'mb-xs-0': formLayout === 'inline',
+                                                    'flex-auto': formLayout === 'inline'
+                                                })}
+                                            >
+                                                <FormField field={field} />
+                                            </div>
+                                    ))}
+                                    <div
+                                        className={classNames('form-submit', {
+                                            'mt-3': formLayout === 'stacked',
+                                            'mx-auto': formLayout === 'inline',
+                                            'mr-xs-0': formLayout === 'inline',
+                                            'ml-xs-1': formLayout === 'inline'
+                                        })}
+                                    >
+                                        <button type="submit" className="btn btn--primary">{submitLabel}</button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
