@@ -99,6 +99,7 @@ export default class FormSection extends React.Component {
                             })}
                         >
                             <form
+                             style="display:none"
                                 name={formId}
                                 id={formId}
                                 {...(formAction ? ({ action: formAction }) : null)}
