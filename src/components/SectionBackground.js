@@ -12,7 +12,7 @@ export default class SectionBackground extends React.Component {
         const backgroundImagePosition = _.get(section, 'background_image_position', 'center center');
         const backgroundImageRepeat = _.get(section, 'background_image_repeat', 'no-repeat');
 
-        return (
+        //return (
             <div
                 className="cover-img"
                 style={{
