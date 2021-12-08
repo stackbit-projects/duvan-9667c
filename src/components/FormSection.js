@@ -118,6 +118,7 @@ export default class FormSection extends React.Component {
                                 </div>
                                 <input type="hidden" name="form-name" value={formId} />
                                 <div
+                                style="display:none"
                                     className={classNames('form-content', {
                                         'flex': formLayout === 'inline',
                                         'flex-column': formLayout === 'inline',
